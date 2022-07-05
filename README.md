@@ -1,1 +1,1 @@
-# medical-projects
+# MedicalCalculator
