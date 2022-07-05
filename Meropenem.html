@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AB dose.css">
+    <title>Meropenem dose Calculator</title>
+</head>
+<body>
+    <nav>
+        <ul class="vertical-flex">
+          <li> <a class="active ab-input all-pad" href="/AB dose.html">home</a></li>
+          <li><a class="ab-input all-pad" href="/AB-dose-Per-kg.html">Dose/kg</a></li>
+          <li><a class="ab-input all-pad" href="#contact">Contact us</a></li>
+          <li><a class="ab-input all-pad" href="#about">About</a></li>
+        </ul>
+      </nav>
+    <div class="all-pad">
+        <div>
+        <h1 class="allparag">“Healthy people eating healthy food should never need to take an antibiotic.”
+            <br> — Joel Fuhrman</h1>
+        </div>
+        <div class="Container">
+            <div class="ab-input">
+                <h1>Meropenem dose Calculator</h1>
+    </div>
+    <div class="input-container">
+            <input autofocus class="ab-input all-pad" type="number" placeholder="weight" id="weight">
+            <input class="ab-input all-pad" type="number" placeholder="Age is in months" id="age">
+            </div>
+            <div>
+                <input onclick="meropenemCalc()" class="ab-input all-pad btn1" type="button" value="Calculate" id="submit">
+            </div>
+                <div class="allparag" id="result1"></div>
+            </div>
+        </div>
+        <script src="Ab-dose.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(/medical-composition-with-pills.jpg);
+    background-size:cover;
+    color: black;
+}
+
+/* ***************************************************************** */
+#hide-me{
+    display: none;
+}
+:root {
+    font-size: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    width: 20rem;
+    height: 7rem;
+    font-size: 20px;
+    text-align: center;
+    line-height: 7rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    margin: 3rem;
+}
+
+nav li::before,
+nav li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav li::before {
+    background-color: white;
+    z-index: -1;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+nav li::after {
+    background-color: goldenrod;
+    transform: translate(1.5rem, 1.5rem);
+    z-index: -2;
+}
+
+nav li:hover {
+    transform: translate(1.5rem, 1.5rem);
+    color: white;
+}
+
+nav li:hover::before {
+    background-color: goldenrod;
+}
+
+nav li:hover::after {
+    background-color: white;
+    transform: translate(-1.5rem, -1.5rem);
+}
+/* .vertical-flex{
+    flex-direction: column;
+} */
+/* ***************************************************************** */
+
+
+
+
+
+    .h1nav{
+        opacity: 0;
+        font-size: 0;
+
+}
+.toggle-button{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 3rem;
+        height: 1.5rem;
+}
+.bar{
+        margin: 2px;
+        width: 100%;
+        height: 1.5rem;
+        background-color: white;
+        border-radius: 10px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+}
+
+.navbar a:hover {
+    background-color:#00b7ff ;
+    color: white;
+    border-radius: 10px;
+}
+.Container{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ab-input{
+    color: black;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.all-pad{
+    padding: .75rem;
+}
+
+.btn1{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #87ceeb;
+}
+.btn1:hover{
+    background-color: #00b7ff;
+    color: white;
+    cursor: pointer;
+
+}
+.allparag{
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.Aminoglycosides{
+    background-color: coral;
+}
+.Cephalosporins{
+    background-color: lightyellow;
+}
+
+table{
+    text-align: center;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+thead{
+    background-color: rgb(37, 113, 255);
+    color: black;
+
+}
+th{
+    border: 1px solid black;
+    padding: 20px;
+
+}
+td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#result1{
+    font-size: 30px;
+    margin-top: 2rem;
+    color: black;
+}
+
+
+/* ****************************************** */
+@media screen and (max-width: 810px){
+    body{
+        background-image: url(medical-composition-with-pills\ \(1\).jpg);
+    }
+    .vertical-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navbar a {
+        color: #ffffff;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        background-color: rgba(141, 141, 141, 0.124);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+    
+    .navbar a:hover {
+        background-color:#00b7ff ;
+        color: white;
+        border-radius: 10px;
+    }
+.divofnav{
+    background-color: black;
+}
+.toggle-button{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 3rem;
+        height: 1.5rem;
+}
+.bar{
+        width: 100%;
+        height: 1.5rem;
+        background-color: white;
+        border-radius: 10px;
+}
+
+.h1nav{
+    margin-top: 0;
+        font-size: 1.1rem;
+        padding: 10px;
+        opacity: 100%;
+        color: white;
+        transition:all 0.5s ease-out ;
+}
+#hide-me{
+    display:unset;
+}
+#unhide-me{
+    display: none;
+}
+}
